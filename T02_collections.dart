@@ -44,9 +44,39 @@ void main() {
   List<dynamic> dynamicList = [1, "two", 3.0, true];
   print(dynamicList);
 
-  // var set = {1, 2, 3};
-  // print(set);
+  // Set example
+  var mySet = {1, 2, 3};
+  print(mySet);
+  print(mySet.runtimeType);
+  print(mySet is Set<int>);
 
-  // var map = {'one': 1, 'two': 2, 'three': 3};
-  // print(map);
+  Set<String> strSet = {'apple', 'banana', 'orange'};
+  print(strSet);
+  strSet.add('grape'); // Adding an element
+  print(strSet);
+  strSet.add('banana'); // Adding a duplicate element (will be ignored)
+  print(strSet);
+
+  // Map example
+  var map = {'one': 1, 'two': 2, 'three': 3};
+  print(map);
+  print(map.runtimeType);
+  print(map is Map<String, int>);
+
+  Map<String, String> strMap = {'name': 'Alice', 'city': 'Wonderland'};
+  print(strMap);
+  strMap['country'] = 'Fictionland'; // Adding a new key-value pair
+  print(strMap);
+  strMap['city'] = 'Dreamland'; // Updating an existing key
+  print(strMap);
+  strMap.remove('city'); // Delete a key-value pair
+  print(strMap);
+
+  // Spread operator in map
+  Map<String, String> strMap2 = {'first': 'John', 'last': 'Doe', ...strMap};
+  print(strMap2);
+
+  // Destructuring (unpacking) a map
+  var {'first': firstName, 'last': lastName} = strMap2;
+  print('First Name: $firstName, Last Name: $lastName');
 }

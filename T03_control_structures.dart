@@ -31,6 +31,18 @@ void main() {
     print(s);
   }
 
+  // Looping through a list
+  List<int> numList = [10, 20, 30, 40, 50];
+  for (int num in numList) {
+    print(num);
+  }
+
+  // Looping through a map
+  Map<String, int> myMap = {'a': 1, 'b': 2, 'c': 3};
+  for (var entry in myMap.entries) {
+    print('${entry.key}: ${entry.value}');
+  }
+
   // While loops
   int myNum = 0;
   while (myNum < 10) {
