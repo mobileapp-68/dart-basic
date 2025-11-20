@@ -1,5 +1,3 @@
-// import 'exercise2_finished.dart';
-
 void main() {
   // Call our functions
   sayHello();
@@ -28,15 +26,6 @@ void main() {
   // sayHelloNamedArgument("Bob");
 
   print(square(5));
-
-  // print(sub(10, 5));
-  // print(sub(5, 10));
-
-  // print(getTotalSeconds());
-  // print(getTotalSeconds(hours: 1));
-  // print(getTotalSeconds(minutes: 1));
-  // print(getTotalSeconds(seconds: 1));
-  // print(getTotalSeconds(hours: 12, minutes: 234, seconds: 123));
 }
 
 // Functions in Dart
