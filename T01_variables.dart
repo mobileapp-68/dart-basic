@@ -44,6 +44,12 @@ void main() {
   variable = "string";
   print(variable.runtimeType);
 
+  // Const variables cannot be changed after they are set
+  const pi = 3.14159;
+  print(pi);
+  // This will give an error
+  // pi = 3.14;
+
   // Dart compiler can infer types
   var newVar = 123;
   print(newVar.runtimeType);

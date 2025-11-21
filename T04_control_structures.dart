@@ -20,6 +20,17 @@ void main() {
     print("Number is less than or equal to 5");
   }
 
+  // Ternary operator
+  int age = 18;
+  String message = age >= 18 ? "You are an adult." : "You are a minor.";
+  print(message); // Output: You are an adult.
+
+  // Null-aware operator
+  String? email = "user@example.com";
+  // String? email = null;
+  String contactInfo = email ?? "No email provided";
+  print(contactInfo); //
+
   // For loops
   for (int i = 0; i < 5; i++) {
     print(i);

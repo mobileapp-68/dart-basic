@@ -26,6 +26,16 @@ void main() {
   // sayHelloNamedArgument("Bob");
 
   print(square(5));
+
+  // Short-hand function syntax
+  int add(int x, int y) => x + y;
+  print(add(3, 4));
+
+  // This does not work because there are multiple statements.
+  // void greet(String name) => {
+  //   print('Hello, $name!');
+  //   print('Welcome!');
+  // };
 }
 
 // Functions in Dart
