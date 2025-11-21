@@ -50,6 +50,13 @@ void main() {
   // This will give an error
   // pi = 3.14;
 
+  // Final variables can only be set once
+  final myAge;
+  myAge = 25;
+  print(myAge);
+  // This will give an error
+  // myAge = 26;
+
   // Dart compiler can infer types
   var newVar = 123;
   print(newVar.runtimeType);
